@@ -1,7 +1,7 @@
 {
-  "name": "better-baguio-web",
+  "name": "better-tacloban-web",
   "version": "0.1.0",
-  "description": "BetterBaguio.org - independent civic information for Baguio City",
+  "description": "BetterTacloban.org - independent civic information for Tacloban City",
   "scripts": {
     "dev": "python3 -m http.server 8000",
     "build": "bash build.sh",
@@ -24,12 +24,14 @@
     "package:only": "bash scripts/package-cpanel.sh"
   },
   "keywords": [
-    "baguio-city",
-    "cordillera",
+    "tacloban-city",
+    "leyte",
+    "eastern-visayas",
     "government",
-    "lgu"
+    "lgu",
+    "civic-tech"
   ],
-  "author": "Better Baguio volunteers",
+  "author": "Better Tacloban contributors",
   "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.23.9",
