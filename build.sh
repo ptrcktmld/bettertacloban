@@ -1,5 +1,5 @@
 #!/bin/bash
-# BetterBaguio — Production Build Script
+# BetterTacloban — Production Build Script
 # Usage:
 #   bash build.sh            — bump patch, build everything
 #   bash build.sh --no-bump  — keep current version, build everything
@@ -22,7 +22,7 @@ done
 
 echo ""
 echo "╔══════════════════════════════════════════╗"
-echo "║   BetterBaguio — Production Build        ║"
+echo "║   BetterTacloban — Production Build      ║"
 echo "╚══════════════════════════════════════════╝"
 
 # ── 0. Build-time configuration (optional .env, see .env.example) ────────────

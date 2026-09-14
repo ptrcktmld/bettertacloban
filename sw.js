@@ -1,9 +1,8 @@
-var CACHE = 'betterbaguio-v0.1.0-projects';
+var CACHE = 'bettertacloban-v0.1.0';
 var CORE = [
   '/', '/services/', '/government/', '/statistics/', '/projects/', '/legislative/', '/budget/', '/contact/',
-  '/assets/css/better-baguio.css', '/assets/js/site-shell.js', '/assets/js/weather-hero.js', '/assets/js/projects-tracker.js',
-  '/data/prism/projects.json',
-  '/assets/images/logo/better-baguio-mark.png',
+  '/assets/css/better-baguio.css', '/assets/js/site-shell.js',
+  '/assets/images/logo/bettertacloban/better-tacloban-mark.svg',
   '/manifest.webmanifest'
 ];
 

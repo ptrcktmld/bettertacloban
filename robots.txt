@@ -4,4 +4,4 @@ Disallow: /admin/
 Disallow: /service-details/
 Disallow: /react-app/
 
-Sitemap: https://betterbaguio.org/sitemap.xml
+Sitemap: https://bettertacloban.org/sitemap.xml
