@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">BetterTacloban civic location mark</title>
+  <desc id="desc">An abstract location pin containing three connected community points.</desc>
+  <path fill="#0b3b48" d="M32 4C19.3 4 9 14.3 9 27c0 16 18.5 29.6 21.2 31.5a3 3 0 0 0 3.6 0C36.5 56.6 55 43 55 27 55 14.3 44.7 4 32 4Z"/>
+  <path fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3.5" d="m24 32 8-9 8 9M24 32h16"/>
+  <circle cx="32" cy="22" r="4" fill="#f2a541"/>
+  <circle cx="23" cy="34" r="4" fill="#fff"/>
+  <circle cx="41" cy="34" r="4" fill="#fff"/>
+</svg>

@@ -52,6 +52,8 @@ assets/js/*
 !assets/js/weather-hero.js
 !assets/js/projects-tracker.js
 assets/images/logo/*
+!assets/images/logo/bettertacloban/
+!assets/images/logo/bettertacloban/*.svg
 !assets/images/logo/better-baguio-logo.svg
 !assets/images/logo/better-baguio-logo-white.svg
 !assets/images/logo/favicon.svg

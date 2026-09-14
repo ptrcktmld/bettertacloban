@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 112" role="img" aria-labelledby="title desc">
+  <title id="title">BetterTacloban logo</title>
+  <desc id="desc">An abstract civic location mark with three connected community points beside the BetterTacloban wordmark.</desc>
+  <g transform="translate(8 8) scale(1.5)">
+    <path fill="#0b3b48" d="M32 4C19.3 4 9 14.3 9 27c0 16 18.5 29.6 21.2 31.5a3 3 0 0 0 3.6 0C36.5 56.6 55 43 55 27 55 14.3 44.7 4 32 4Z"/>
+    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3.5" d="m24 32 8-9 8 9M24 32h16"/>
+    <circle cx="32" cy="22" r="4" fill="#f2a541"/>
+    <circle cx="23" cy="34" r="4" fill="#fff"/>
+    <circle cx="41" cy="34" r="4" fill="#fff"/>
+  </g>
+  <text x="118" y="72" fill="#0b3b48" font-family="Manrope, system-ui, sans-serif" font-size="50" font-weight="750" letter-spacing="-1.5">BetterTacloban</text>
+  <rect x="120" y="83" width="84" height="5" rx="2.5" fill="#f2a541"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">BetterTacloban favicon</title>
+  <desc id="desc">A compact civic location mark with connected community points.</desc>
+  <rect width="64" height="64" rx="14" fill="#f4f8f8"/>
+  <path fill="#0b3b48" d="M32 5C20.4 5 11 14.4 11 26c0 14.6 16.9 27 19.3 28.8a2.8 2.8 0 0 0 3.4 0C36.1 53 53 40.6 53 26 53 14.4 43.6 5 32 5Z"/>
+  <path fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3.2" d="m24.5 30.5 7.5-8 7.5 8M24.5 30.5h15"/>
+  <circle cx="32" cy="21.5" r="3.7" fill="#f2a541"/>
+  <circle cx="23.5" cy="32.5" r="3.7" fill="#fff"/>
+  <circle cx="40.5" cy="32.5" r="3.7" fill="#fff"/>
+</svg>

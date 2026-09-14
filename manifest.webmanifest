@@ -1,10 +1,10 @@
 {
-  "name": "Better Baguio",
-  "short_name": "BetterBaguio",
-  "description": "Independent civic information for Baguio City.",
+  "name": "BetterTacloban",
+  "short_name": "BetterTacloban",
+  "description": "Independent civic information for Tacloban City",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#f2f7f4",
   "theme_color": "#123f33",
-  "icons": [{ "src": "/assets/images/logo/better-baguio-mark.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }]
+  "icons": [{ "src": "assets/images/logo/bettertacloban/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
 }

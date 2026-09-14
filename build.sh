@@ -68,6 +68,8 @@ if command -v rsync &>/dev/null; then
         --include='assets/js/projects-tracker.js' \
         --exclude='assets/js/*' \
         --include='assets/images/logo/better-baguio-mark.png' \
+        --include='assets/images/logo/bettertacloban/' \
+        --include='assets/images/logo/bettertacloban/***' \
         --exclude='assets/images/logo/*' \
         --exclude='assets/betterbaguio-logo.png' \
         --exclude='assets/betterbaguio-logo-text.png' \
