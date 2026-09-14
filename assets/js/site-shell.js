@@ -24,11 +24,7 @@
         <a class="bb-logo" href="/" aria-label="Better Baguio home"><img src="/assets/images/logo/better-baguio-mark.png" alt="" width="512" height="512"><span class="bb-logo-text"><strong>Better</strong><span>Baguio</span></span></a>
         <button class="bb-menu-button" type="button" aria-expanded="false" aria-controls="bb-menu">Menu</button>
         <ul class="bb-menu" id="bb-menu">${nav}</ul>
-      </nav><div class="bb-emergency"><div class="bb-container">
-        <strong>Emergency</strong><a href="tel:911">911</a>
-        <span>CDRRMO</span><a href="tel:0746611455">(074) 661-1455</a>
-        <span>EMS</span><a href="tel:09055551911">0905 555 1911</a>
-      </div></div></header>`;
+      </nav></header>`;
   }
 
   const shellFooter = document.querySelector('[data-site-footer]');
@@ -36,11 +32,11 @@
     shellFooter.innerHTML = `
       <footer class="bb-footer"><div class="bb-container">
         <div class="bb-footer-grid">
-          <div><div class="bb-footer-brand"><img src="/assets/images/logo/better-baguio-mark.png" alt="" width="512" height="512"><div><strong>Better Baguio</strong><span>City information, made easier</span></div></div><p>Built by volunteers to help people find their way around Baguio City services and public information. We are independent of the City Government.</p></div>
+          <div><div class="bb-footer-brand"><img src="/assets/images/logo/better-baguio-mark.png" alt="" width="512" height="512"><div><strong>Better Baguio</strong><span>Independent civic information</span></div></div><p>Civic content verification is in progress. This volunteer-built project is independent and does not process government transactions.</p></div>
           <div><h2>Explore</h2><ul>${pages.slice(1).map(([label, href]) => `<li><a href="${href}">${label}</a></li>`).join('')}</ul></div>
-          <div><h2>Official sources</h2><ul><li><a href="https://main.baguio.gov.ph/" target="_blank" rel="noopener">City Government</a></li><li><a href="https://citycouncil.baguio.gov.ph/" target="_blank" rel="noopener">City Council</a></li><li><a href="https://psa.gov.ph/classification/psgc/barangays/1430300000" target="_blank" rel="noopener">PSA city profile</a></li><li><a href="https://github.com/ashier/betterbaguio" target="_blank" rel="noopener">Source code</a></li></ul></div>
+          <div><h2>Project</h2><ul><li><a href="https://github.com/ashier/betterbaguio" target="_blank" rel="noopener">BetterBaguio source code</a></li></ul></div>
         </div>
-        <div class="bb-footer-bottom">Free to use · Every public fact links back to its source · Open-source, MIT-licensed code</div>
+        <div class="bb-footer-bottom">Free to use · Civic content verification in progress · Open-source, MIT-licensed code</div>
       </div></footer>`;
   }
 
