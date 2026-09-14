@@ -52,6 +52,10 @@ Prefer authoritative, primary sources, including:
 6. Exclude or clearly withhold inherited content until it has been verified for Tacloban.
 7. Correct errors transparently and update the supporting source record.
 
+## Source registry
+
+Future factual content must reference a source by its ID in [`data/sources.json`](data/sources.json) and include the date on which the fact was verified. Prefer primary or authoritative sources whenever available, avoid unsourced civic claims, and clearly distinguish current facts from historical records.
+
 ## Attribution and license
 
 BetterTacloban.org is based on the open-source [BetterBaguio project](https://github.com/ashier/betterbaguio), which was adapted from [BetterSolano/bettersolano](https://github.com/BetterSolano/bettersolano). Their work and project lineage must remain credited in accordance with applicable license and attribution requirements.

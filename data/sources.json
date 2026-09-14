@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "tacloban-city-government",
+      "name": "City Government of Tacloban",
+      "publisher": "City Government of Tacloban",
+      "category": "city-government",
+      "url": "https://tacloban.gov.ph/",
+      "authorityLevel": "primary",
+      "jurisdiction": "Tacloban City",
+      "status": "active",
+      "notes": "Official portal URL independently verified outside Codex.",
+      "lastChecked": "2026-09-14"
+    },
+    {
+      "id": "tacloban-sangguniang-panlungsod",
+      "name": "Sangguniang Panlungsod ng Tacloban",
+      "publisher": "Sangguniang Panlungsod ng Tacloban",
+      "category": "legislation",
+      "url": "https://tacloban.gov.ph/ordinance/",
+      "authorityLevel": "primary",
+      "jurisdiction": "Tacloban City",
+      "status": "active",
+      "notes": "Official ordinance repository independently verified outside Codex. Related resolutions repository: https://tacloban.gov.ph/resolution/",
+      "lastChecked": "2026-09-14"
+    },
+    {
+      "id": "philippine-statistics-authority",
+      "name": "Philippine Statistics Authority",
+      "publisher": "Philippine Statistics Authority",
+      "category": "statistics",
+      "url": "https://psa.gov.ph/",
+      "authorityLevel": "primary",
+      "jurisdiction": "Philippines",
+      "status": "active",
+      "notes": "Official portal URL independently verified outside Codex.",
+      "lastChecked": "2026-09-14"
+    },
+    {
+      "id": "commission-on-audit",
+      "name": "Commission on Audit",
+      "publisher": "Commission on Audit",
+      "category": "audit",
+      "url": "https://www.coa.gov.ph/",
+      "authorityLevel": "primary",
+      "jurisdiction": "Philippines",
+      "status": "active",
+      "notes": "Official portal URL independently verified outside Codex.",
+      "lastChecked": "2026-09-14"
+    },
+    {
+      "id": "department-budget-management",
+      "name": "Department of Budget and Management",
+      "publisher": "Department of Budget and Management",
+      "category": "budget",
+      "url": "https://www.dbm.gov.ph/",
+      "authorityLevel": "primary",
+      "jurisdiction": "Philippines",
+      "status": "active",
+      "notes": "Official portal URL independently verified outside Codex.",
+      "lastChecked": "2026-09-14"
+    },
+    {
+      "id": "department-interior-local-government",
+      "name": "Department of the Interior and Local Government Region VIII",
+      "publisher": "Department of the Interior and Local Government Region VIII",
+      "category": "national-government",
+      "url": "https://region8.dilg.gov.ph/",
+      "authorityLevel": "authoritative",
+      "jurisdiction": "Eastern Visayas / Region VIII",
+      "status": "active",
+      "notes": "Official regional portal independently verified outside Codex.",
+      "lastChecked": "2026-09-14"
+    },
+    {
+      "id": "department-public-works-highways",
+      "name": "Department of Public Works and Highways",
+      "publisher": "Department of Public Works and Highways",
+      "category": "infrastructure",
+      "url": "https://www.dpwh.gov.ph/",
+      "authorityLevel": "primary",
+      "jurisdiction": "Philippines",
+      "status": "active",
+      "notes": "Official portal URL independently verified outside Codex.",
+      "lastChecked": "2026-09-14"
+    },
+    {
+      "id": "philgeps",
+      "name": "Philippine Government Electronic Procurement System",
+      "publisher": "Procurement Service - Department of Budget and Management",
+      "category": "procurement",
+      "url": "https://philgeps.gov.ph/",
+      "authorityLevel": "primary",
+      "jurisdiction": "Philippines",
+      "status": "active",
+      "notes": "Official portal URL independently verified outside Codex.",
+      "lastChecked": "2026-09-14"
+    }
+  ]
+}

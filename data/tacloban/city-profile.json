@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "city": {
+    "officialName": "City of Tacloban",
+    "region": "Region VIII (Eastern Visayas)",
+    "classification": "Highly Urbanized City",
+    "psgcCode": "0831600000",
+    "psgcCorrespondenceCode": "083747000"
+  },
+  "population": {
+    "value": 259353,
+    "referenceDate": "2024-07-01",
+    "census": "2024 Census of Population (2024 POPCEN)"
+  },
+  "barangays": {
+    "count": 138
+  },
+  "verification": {
+    "lastVerified": "2026-09-14",
+    "status": "verified"
+  },
+  "sources": [
+    {
+      "sourceId": "philippine-statistics-authority",
+      "url": "https://rsso08.psa.gov.ph/system/files/attachment-dir/2024POPCEN_Tacloban%20City.pdf",
+      "supports": [
+        "population.value",
+        "population.referenceDate",
+        "population.census"
+      ]
+    },
+    {
+      "sourceId": "philippine-statistics-authority",
+      "url": "https://psa.gov.ph/classification/psgc/barangays/0831600000",
+      "supports": [
+        "city.officialName",
+        "city.region",
+        "city.psgcCode",
+        "city.psgcCorrespondenceCode",
+        "barangays.count"
+      ]
+    },
+    {
+      "sourceId": "philippine-statistics-authority",
+      "url": "https://psa.gov.ph/classification/psgc/hucs",
+      "supports": [
+        "city.classification"
+      ]
+    }
+  ]
+}
