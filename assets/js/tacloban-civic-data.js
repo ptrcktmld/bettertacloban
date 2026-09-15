@@ -43,6 +43,12 @@
     }
   }
 
+  function namedOfficialLink(url, label) {
+    const link = officialLink(url);
+    if (link) link.textContent = label;
+    return link;
+  }
+
   function provenance(options) {
     const wrap = element('div', 'bb-provenance');
     const source = sourceById(options.sources, options.sourceId);
@@ -202,13 +208,87 @@
     target.replaceChildren(heading, caveat, directory);
   }
 
+  function renderElectionCard(official) {
+    const card = element('article', 'bb-election-card');
+    card.append(element('p', 'bb-election-position', official.position), element('h4', '', official.name));
+    return card;
+  }
+
+  function electionProvenance(election, sources) {
+    const wrap = element('div', 'bb-government-provenance');
+    wrap.append(element('p', '', 'Source: City Government of Tacloban · Last verified: ' + formatDate(election.lastVerified)));
+    const link = namedOfficialLink(election.source && election.source.specificSourceUrl, 'Official 2025 Tacloban election-result source');
+    if (link) wrap.append(link);
+    return wrap;
+  }
+
+  function renderGovernment(target, election, current, sources) {
+    const results = election.officials || [];
+    const currentRecords = current.officials || [];
+    const resultById = new Map(results.map(function (official) { return [official.id, official]; }));
+    const mayor = results.filter(function (official) { return official.position === 'Mayor'; });
+    const viceMayor = results.filter(function (official) { return official.position === 'Vice Mayor'; });
+    const council = results.filter(function (official) { return official.position === 'City Council Member'; });
+    if (results.length !== 12 || mayor.length !== 1 || viceMayor.length !== 1 || council.length !== 10 || currentRecords.length !== 12) return failure(target);
+
+    const intro = element('div', 'bb-callout bb-government-notice');
+    intro.append(element('strong', '', 'How to read this page.'), document.createTextNode(' Election results and current-office verification are different records. This page does not treat a 2025 proclamation alone as proof of current service.'));
+
+    const electionSection = element('section', 'bb-government-section');
+    electionSection.setAttribute('aria-labelledby', 'election-results-heading');
+    electionSection.append(element('span', 'bb-eyebrow', 'Election record'), element('h2', '', '2025 proclaimed election results'));
+    electionSection.lastElementChild.id = 'election-results-heading';
+    electionSection.append(element('p', 'bb-government-explanation', 'These records reflect officials proclaimed elected following the 2025 Tacloban City local elections. Election results do not by themselves establish current office status.'));
+    const executive = element('div', 'bb-election-executive');
+    mayor.concat(viceMayor).forEach(function (official) { executive.append(renderElectionCard(official)); });
+    electionSection.append(executive, element('h3', '', 'City Council'), element('p', 'bb-government-explanation', '10 City Council members were proclaimed elected.'));
+    const councilGrid = element('div', 'bb-election-council');
+    council.forEach(function (official) { councilGrid.append(renderElectionCard(official)); });
+    electionSection.append(councilGrid, electionProvenance(election, sources));
+
+    const verificationSection = element('section', 'bb-government-section bb-government-current');
+    verificationSection.setAttribute('aria-labelledby', 'current-verification-heading');
+    verificationSection.append(element('span', 'bb-eyebrow', 'Separate verification record'), element('h2', '', 'Current-office verification'));
+    verificationSection.lastElementChild.id = 'current-verification-heading';
+    verificationSection.append(element('p', 'bb-government-explanation', 'These records report only what later official evidence independently supports. A review date is not the same as an evidence date.'));
+    const currentList = element('div', 'bb-current-list');
+    currentRecords.forEach(function (record) {
+      const electionOfficial = resultById.get(record.officialId);
+      if (!electionOfficial) return;
+      const card = element('article', 'bb-current-card');
+      card.append(element('h3', '', electionOfficial.name), element('p', 'bb-election-position', record.position));
+      if (record.currentVerificationStatus === 'verified-serving-at-evidence-date' && record.evidenceDate) {
+        card.append(element('p', 'bb-status bb-status-verified', 'Serving as City Mayor according to official evidence dated ' + formatDate(record.evidenceDate) + '.'));
+        const evidenceContext = element('p', 'bb-current-evidence-name', 'Evidence identifies: ' + (record.currentEvidenceName || electionOfficial.name));
+        card.append(evidenceContext);
+      } else {
+        card.append(element('p', 'bb-status bb-status-pending', 'Current-office status: Verification in progress. Current service has not yet been independently corroborated by a later official source.'));
+      }
+      const details = element('details', 'bb-current-source');
+      details.append(element('summary', '', 'Source and verification details'));
+      const detailsBody = element('div');
+      if (record.evidenceDate) detailsBody.append(element('p', '', 'Evidence date: ' + formatDate(record.evidenceDate)));
+      detailsBody.append(element('p', '', 'Last reviewed: ' + formatDate(record.lastVerified)));
+      (record.evidence || []).forEach(function (item) {
+        const link = namedOfficialLink(item.specificSourceUrl, 'Official evidence dated ' + formatDate(item.documentDate));
+        if (link) detailsBody.append(link);
+      });
+      details.append(detailsBody);
+      card.append(details);
+      currentList.append(card);
+    });
+    verificationSection.append(currentList);
+    target.replaceChildren(intro, electionSection, verificationSection);
+  }
+
   function run() {
     const homeProfile = document.querySelector('[data-tacloban-home-profile]');
     const homeEmergency = document.querySelector('[data-tacloban-emergency]');
     const statistics = document.querySelector('[data-tacloban-statistics]');
     const directory = document.querySelector('[data-tacloban-directory]');
-    if (!homeProfile && !statistics && !directory) return;
-    Promise.all([loadJson('sources.json'), loadJson('tacloban/city-profile.json')]).then(function (result) {
+    const government = document.querySelector('[data-tacloban-government]');
+    if (!homeProfile && !statistics && !directory && !government) return;
+    if (homeProfile || statistics) Promise.all([loadJson('sources.json'), loadJson('tacloban/city-profile.json')]).then(function (result) {
       if (homeProfile) renderProfile(homeProfile, result[1], result[0], { eyebrow: 'Verified city profile', title: 'Tacloban at a glance', includeCodes: false });
       if (statistics) renderProfile(statistics, result[1], result[0], { eyebrow: 'Limited verified profile', title: 'Basic verified statistics', includeCodes: true });
     }).catch(function () { [homeProfile, statistics].filter(Boolean).forEach(failure); });
@@ -218,6 +298,9 @@
     if (directory) Promise.all([loadJson('sources.json'), loadJson('tacloban/offices.json'), loadJson('tacloban/office-contacts.json')]).then(function (result) {
       renderDirectory(directory, result[1], result[2], result[0]);
     }).catch(function () { failure(directory); });
+    if (government) Promise.all([loadJson('sources.json'), loadJson('tacloban/elected-officials.json'), loadJson('tacloban/current-officials.json')]).then(function (result) {
+      renderGovernment(government, result[1], result[2], result[0]);
+    }).catch(function () { failure(government); });
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', run); else run();

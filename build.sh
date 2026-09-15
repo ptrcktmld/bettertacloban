@@ -83,6 +83,8 @@ if command -v rsync &>/dev/null; then
         --include='data/tacloban/offices.json' \
         --include='data/tacloban/office-contacts.json' \
         --include='data/tacloban/emergency-contacts.json' \
+        --include='data/tacloban/elected-officials.json' \
+        --include='data/tacloban/current-officials.json' \
         --exclude='data/***' \
         --exclude='node_modules' \
         --exclude='dist' \

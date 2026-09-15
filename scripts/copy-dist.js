@@ -82,6 +82,8 @@ const civicDataFiles = [
   path.join('tacloban', 'offices.json'),
   path.join('tacloban', 'office-contacts.json'),
   path.join('tacloban', 'emergency-contacts.json'),
+  path.join('tacloban', 'elected-officials.json'),
+  path.join('tacloban', 'current-officials.json'),
 ];
 for (const relativePath of civicDataFiles) {
   const sourceFile = path.join(path.resolve(src), 'data', relativePath);
