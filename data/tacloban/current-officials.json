@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "city": "City of Tacloban",
+  "lastVerified": "2026-09-15",
+  "electionProvenance": {
+    "sourceId": "tacloban-city-government",
+    "specificSourceUrl": "https://tacloban.gov.ph/romualdez-bloc-sweeps-tacloban-midterm-elections/"
+  },
+  "officials": [
+    {
+      "officialId": "alfred-romualdez",
+      "position": "Mayor",
+      "currentVerificationStatus": "verified-serving-at-evidence-date",
+      "electionSourceName": "Alfred Romualdez",
+      "currentEvidenceName": "Alfred S. Romualdez",
+      "evidenceDate": "2026-03-06",
+      "lastVerified": "2026-09-15",
+      "evidence": [
+        {
+          "sourceId": "tacloban-city-government",
+          "specificSourceUrl": "https://tacloban.gov.ph/wp-content/uploads/2026/03/002-01-2026-Kains-NOA.pdf",
+          "documentDate": "2026-02-26"
+        },
+        {
+          "sourceId": "tacloban-city-government",
+          "specificSourceUrl": "https://tacloban.gov.ph/wp-content/uploads/2026/03/002-01-2026-Kains-NTP.pdf",
+          "documentDate": "2026-03-06"
+        }
+      ]
+    },
+    {
+      "officialId": "raymund-romualdez",
+      "position": "Vice Mayor",
+      "currentVerificationStatus": "needs-current-corroboration",
+      "lastVerified": "2026-09-15",
+      "evidence": []
+    },
+    {
+      "officialId": "edmund-edward-chua",
+      "position": "City Council Member",
+      "currentVerificationStatus": "needs-current-corroboration",
+      "lastVerified": "2026-09-15",
+      "evidence": []
+    },
+    {
+      "officialId": "edward-frederick-chua",
+      "position": "City Council Member",
+      "currentVerificationStatus": "needs-current-corroboration",
+      "lastVerified": "2026-09-15",
+      "evidence": []
+    },
+    {
+      "officialId": "jerry-uy",
+      "position": "City Council Member",
+      "currentVerificationStatus": "needs-current-corroboration",
+      "lastVerified": "2026-09-15",
+      "evidence": []
+    },
+    {
+      "officialId": "marty-romualdez",
+      "position": "City Council Member",
+      "currentVerificationStatus": "needs-current-corroboration",
+      "lastVerified": "2026-09-15",
+      "evidence": []
+    },
+    {
+      "officialId": "eric-de-veyra",
+      "position": "City Council Member",
+      "currentVerificationStatus": "needs-current-corroboration",
+      "lastVerified": "2026-09-15",
+      "evidence": []
+    },
+    {
+      "officialId": "dandee-grafil",
+      "position": "City Council Member",
+      "currentVerificationStatus": "needs-current-corroboration",
+      "lastVerified": "2026-09-15",
+      "evidence": []
+    },
+    {
+      "officialId": "chris-esperas",
+      "position": "City Council Member",
+      "currentVerificationStatus": "needs-current-corroboration",
+      "lastVerified": "2026-09-15",
+      "evidence": []
+    },
+    {
+      "officialId": "bryan-granados",
+      "position": "City Council Member",
+      "currentVerificationStatus": "needs-current-corroboration",
+      "lastVerified": "2026-09-15",
+      "evidence": []
+    },
+    {
+      "officialId": "jom-bagulaya",
+      "position": "City Council Member",
+      "currentVerificationStatus": "needs-current-corroboration",
+      "lastVerified": "2026-09-15",
+      "evidence": []
+    },
+    {
+      "officialId": "edson-malaki",
+      "position": "City Council Member",
+      "currentVerificationStatus": "needs-current-corroboration",
+      "lastVerified": "2026-09-15",
+      "evidence": []
+    }
+  ]
+}
