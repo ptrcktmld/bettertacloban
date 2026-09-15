@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "city": "City of Tacloban",
+  "electionYear": 2025,
+  "lastVerified": "2026-09-15",
+  "source": {
+    "sourceId": "tacloban-city-government",
+    "specificSourceUrl": "https://tacloban.gov.ph/romualdez-bloc-sweeps-tacloban-midterm-elections/"
+  },
+  "officials": [
+    {"id":"alfred-romualdez","name":"Alfred Romualdez","position":"Mayor","positionType":"executive","proclamationStatus":"proclaimed-elected","electionYear":2025,"verification":{"sourceId":"tacloban-city-government","specificSourceUrl":"https://tacloban.gov.ph/romualdez-bloc-sweeps-tacloban-midterm-elections/","status":"verified-proclamation","lastVerified":"2026-09-15"}},
+    {"id":"raymund-romualdez","name":"Raymund Romualdez","position":"Vice Mayor","positionType":"executive","proclamationStatus":"proclaimed-elected","electionYear":2025,"verification":{"sourceId":"tacloban-city-government","specificSourceUrl":"https://tacloban.gov.ph/romualdez-bloc-sweeps-tacloban-midterm-elections/","status":"verified-proclamation","lastVerified":"2026-09-15"}},
+    {"id":"edmund-edward-chua","name":"Edmund Edward Chua","position":"City Council Member","positionType":"legislative","proclamationStatus":"proclaimed-elected","electionYear":2025,"verification":{"sourceId":"tacloban-city-government","specificSourceUrl":"https://tacloban.gov.ph/romualdez-bloc-sweeps-tacloban-midterm-elections/","status":"verified-proclamation","lastVerified":"2026-09-15"}},
+    {"id":"edward-frederick-chua","name":"Edward Frederick Chua","position":"City Council Member","positionType":"legislative","proclamationStatus":"proclaimed-elected","electionYear":2025,"verification":{"sourceId":"tacloban-city-government","specificSourceUrl":"https://tacloban.gov.ph/romualdez-bloc-sweeps-tacloban-midterm-elections/","status":"verified-proclamation","lastVerified":"2026-09-15"}},
+    {"id":"jerry-uy","name":"Jerry Uy","position":"City Council Member","positionType":"legislative","proclamationStatus":"proclaimed-elected","electionYear":2025,"verification":{"sourceId":"tacloban-city-government","specificSourceUrl":"https://tacloban.gov.ph/romualdez-bloc-sweeps-tacloban-midterm-elections/","status":"verified-proclamation","lastVerified":"2026-09-15"}},
+    {"id":"marty-romualdez","name":"Marty Romualdez","position":"City Council Member","positionType":"legislative","proclamationStatus":"proclaimed-elected","electionYear":2025,"verification":{"sourceId":"tacloban-city-government","specificSourceUrl":"https://tacloban.gov.ph/romualdez-bloc-sweeps-tacloban-midterm-elections/","status":"verified-proclamation","lastVerified":"2026-09-15"}},
+    {"id":"eric-de-veyra","name":"Eric De Veyra","position":"City Council Member","positionType":"legislative","proclamationStatus":"proclaimed-elected","electionYear":2025,"verification":{"sourceId":"tacloban-city-government","specificSourceUrl":"https://tacloban.gov.ph/romualdez-bloc-sweeps-tacloban-midterm-elections/","status":"verified-proclamation","lastVerified":"2026-09-15"}},
+    {"id":"dandee-grafil","name":"Dandee Grafil","position":"City Council Member","positionType":"legislative","proclamationStatus":"proclaimed-elected","electionYear":2025,"verification":{"sourceId":"tacloban-city-government","specificSourceUrl":"https://tacloban.gov.ph/romualdez-bloc-sweeps-tacloban-midterm-elections/","status":"verified-proclamation","lastVerified":"2026-09-15"}},
+    {"id":"chris-esperas","name":"Chris Esperas","position":"City Council Member","positionType":"legislative","proclamationStatus":"proclaimed-elected","electionYear":2025,"verification":{"sourceId":"tacloban-city-government","specificSourceUrl":"https://tacloban.gov.ph/romualdez-bloc-sweeps-tacloban-midterm-elections/","status":"verified-proclamation","lastVerified":"2026-09-15"}},
+    {"id":"bryan-granados","name":"Bryan Granados","position":"City Council Member","positionType":"legislative","proclamationStatus":"proclaimed-elected","electionYear":2025,"verification":{"sourceId":"tacloban-city-government","specificSourceUrl":"https://tacloban.gov.ph/romualdez-bloc-sweeps-tacloban-midterm-elections/","status":"verified-proclamation","lastVerified":"2026-09-15"}},
+    {"id":"jom-bagulaya","name":"Jom Bagulaya","position":"City Council Member","positionType":"legislative","proclamationStatus":"proclaimed-elected","electionYear":2025,"verification":{"sourceId":"tacloban-city-government","specificSourceUrl":"https://tacloban.gov.ph/romualdez-bloc-sweeps-tacloban-midterm-elections/","status":"verified-proclamation","lastVerified":"2026-09-15"}},
+    {"id":"edson-malaki","name":"Edson Malaki","position":"City Council Member","positionType":"legislative","proclamationStatus":"proclaimed-elected","electionYear":2025,"verification":{"sourceId":"tacloban-city-government","specificSourceUrl":"https://tacloban.gov.ph/romualdez-bloc-sweeps-tacloban-midterm-elections/","status":"verified-proclamation","lastVerified":"2026-09-15"}}
+  ]
+}
