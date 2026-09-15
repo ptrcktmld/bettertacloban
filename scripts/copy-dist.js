@@ -76,10 +76,18 @@ if (!src || !dest) {
 }
 
 copyDir(path.resolve(src), path.resolve(dest));
-const prismSnapshot = path.join(path.resolve(src), 'data', 'prism', 'projects.json');
-if (fs.existsSync(prismSnapshot)) {
-  const prismDestination = path.join(path.resolve(dest), 'data', 'prism', 'projects.json');
-  fs.mkdirSync(path.dirname(prismDestination), { recursive: true });
-  fs.copyFileSync(prismSnapshot, prismDestination);
+const civicDataFiles = [
+  'sources.json',
+  path.join('tacloban', 'city-profile.json'),
+  path.join('tacloban', 'offices.json'),
+  path.join('tacloban', 'office-contacts.json'),
+  path.join('tacloban', 'emergency-contacts.json'),
+];
+for (const relativePath of civicDataFiles) {
+  const sourceFile = path.join(path.resolve(src), 'data', relativePath);
+  if (!fs.existsSync(sourceFile)) continue;
+  const destinationFile = path.join(path.resolve(dest), 'data', relativePath);
+  fs.mkdirSync(path.dirname(destinationFile), { recursive: true });
+  fs.copyFileSync(sourceFile, destinationFile);
 }
 console.log(`Copied: ${src} → ${dest}`);

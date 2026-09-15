@@ -49,6 +49,7 @@ assets/css/*
 !assets/css/better-baguio.css
 assets/js/*
 !assets/js/site-shell.js
+!assets/js/tacloban-civic-data.js
 !assets/js/weather-hero.js
 !assets/js/projects-tracker.js
 assets/images/logo/*

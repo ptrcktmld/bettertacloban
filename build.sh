@@ -64,6 +64,7 @@ if command -v rsync &>/dev/null; then
         --include='assets/css/better-baguio.css' \
         --exclude='assets/css/*' \
         --include='assets/js/site-shell.js' \
+        --include='assets/js/tacloban-civic-data.js' \
         --include='assets/js/weather-hero.js' \
         --include='assets/js/projects-tracker.js' \
         --exclude='assets/js/*' \
@@ -76,8 +77,12 @@ if command -v rsync &>/dev/null; then
         --exclude='assets/images/banners' \
         --exclude='assets/animation' \
         --include='data/' \
-        --include='data/prism/' \
-        --include='data/prism/projects.json' \
+        --include='data/sources.json' \
+        --include='data/tacloban/' \
+        --include='data/tacloban/city-profile.json' \
+        --include='data/tacloban/offices.json' \
+        --include='data/tacloban/office-contacts.json' \
+        --include='data/tacloban/emergency-contacts.json' \
         --exclude='data/***' \
         --exclude='node_modules' \
         --exclude='dist' \
