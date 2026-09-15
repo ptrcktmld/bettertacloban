@@ -135,6 +135,87 @@
       "officeName": "City Disaster Risk Reduction and Management Office",
       "status": "no-verified-contact-found",
       "contacts": []
+    },
+    {
+      "officeId": "tacloban-city-hospital",
+      "officeName": "Tacloban City Hospital",
+      "status": "no-verified-contact-found",
+      "contacts": []
+    },
+    {
+      "officeId": "city-housing-and-community-development-office",
+      "officeName": "City Housing and Community Development Office",
+      "status": "verified-contact",
+      "contacts": [
+        {
+          "type": "mobile",
+          "value": "+639756777204",
+          "sourceValue": "0975 677 7204",
+          "sourceId": "tacloban-city-government",
+          "specificSourceUrl": "https://tacloban.gov.ph/wp-content/uploads/2026/09/CC2026_NEW_2026_4TH_EDITION.pdf",
+          "document": "CC2026_NEW_2026_4TH_EDITION",
+          "page": 773,
+          "lastVerified": "2026-09-14"
+        }
+      ]
+    },
+    {
+      "officeId": "city-population-office",
+      "officeName": "City Population Office",
+      "status": "no-verified-contact-found",
+      "contacts": []
+    },
+    {
+      "officeId": "city-nutrition-office",
+      "officeName": "City Nutrition Office",
+      "status": "no-verified-contact-found",
+      "contacts": []
+    },
+    {
+      "officeId": "pdao",
+      "officeName": "PDAO",
+      "status": "no-verified-contact-found",
+      "contacts": []
+    },
+    {
+      "officeId": "osca",
+      "officeName": "OSCA",
+      "status": "verified-contact",
+      "contacts": [
+        {
+          "type": "email",
+          "value": "seniorcitizenstacloban@gmail.com",
+          "sourceId": "tacloban-city-government",
+          "specificSourceUrl": "https://tacloban.gov.ph/wp-content/uploads/2026/09/CC2026_NEW_2026_4TH_EDITION.pdf",
+          "document": "CC2026_NEW_2026_4TH_EDITION",
+          "page": 916,
+          "lastVerified": "2026-09-14"
+        }
+      ]
+    },
+    {
+      "officeId": "city-sports-office",
+      "officeName": "City Sports Office",
+      "status": "no-verified-contact-found",
+      "contacts": []
+    },
+    {
+      "officeId": "city-agriculturists-office",
+      "officeName": "City Agriculturist’s Office",
+      "status": "no-verified-contact-found",
+      "contacts": []
+    },
+    {
+      "officeId": "city-veterinary-office",
+      "officeName": "City Veterinary Office",
+      "status": "no-verified-contact-found",
+      "contacts": []
+    },
+    {
+      "officeId": "city-architects-office",
+      "officeName": "City Architect’s Office",
+      "status": "no-verified-contact-found",
+      "contacts": []
     }
   ]
 }
