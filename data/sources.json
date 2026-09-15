@@ -74,6 +74,30 @@
       "lastChecked": "2026-09-14"
     },
     {
+      "id": "department-interior-local-government-national",
+      "name": "Department of the Interior and Local Government",
+      "publisher": "Department of the Interior and Local Government",
+      "category": "national-government",
+      "url": "https://dilg.gov.ph/",
+      "authorityLevel": "primary",
+      "jurisdiction": "Philippines",
+      "status": "active",
+      "notes": "Official national portal used for national Unified 911 evidence.",
+      "lastChecked": "2026-09-15"
+    },
+    {
+      "id": "philippine-information-agency",
+      "name": "Philippine Information Agency",
+      "publisher": "Philippine Information Agency",
+      "category": "national-government",
+      "url": "https://pia.gov.ph/",
+      "authorityLevel": "authoritative",
+      "jurisdiction": "Philippines",
+      "status": "active",
+      "notes": "Official government information agency used as corroborating Unified 911 evidence.",
+      "lastChecked": "2026-09-15"
+    },
+    {
       "id": "department-public-works-highways",
       "name": "Department of Public Works and Highways",
       "publisher": "Department of Public Works and Highways",

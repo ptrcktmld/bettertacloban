@@ -31,5 +31,46 @@
       "lastVerified": "2026-09-15"
     }
   ],
-  "contacts": []
+  "contacts": [
+    {
+      "id": "unified-911",
+      "agency": "Unified 911 Emergency Hotline",
+      "jurisdiction": "Philippines",
+      "purpose": "Police, fire, medical, rescue, and other emergency response",
+      "type": "emergencyHotline",
+      "sourceValue": "911",
+      "normalizedValue": "911",
+      "verification": {
+        "status": "verified-current-source",
+        "lastVerified": "2026-09-15"
+      },
+      "evidence": [
+        {
+          "sourceId": "department-interior-local-government-national",
+          "specificSourceUrl": "https://calabarzon.dilg.gov.ph/911-becomes-filipinos-lifeline-as-emergency-calls-top-5-2-million-in-early-2026/",
+          "publishedDate": "2026-05-11",
+          "evidenceRole": "primary-nationwide-channel"
+        },
+        {
+          "sourceId": "department-interior-local-government-national",
+          "specificSourceUrl": "https://calabarzon.dilg.gov.ph/dilg-four-new-unified-911-command-centers-now-fully-operational/",
+          "publishedDate": "2026-06-04",
+          "evidenceRole": "primary-region-viii-applicability"
+        },
+        {
+          "sourceId": "philippine-information-agency",
+          "specificSourceUrl": "https://pia.gov.ph/news/911-hotline-strengthens-police-response-crime-prevention-in-e-visayas-bfp/",
+          "publishedDate": "2026-09-01",
+          "evidenceRole": "corroborating-eastern-visayas-applicability"
+        }
+      ],
+      "regionalApplicability": {
+        "region": "Region VIII / Leyte",
+        "status": "verified-current-source",
+        "statement": "A Unified 911 Satellite Command Center for Region VIII / Leyte was reported fully operational on 2026-06-04.",
+        "evidenceSourceId": "department-interior-local-government-national",
+        "specificSourceUrl": "https://calabarzon.dilg.gov.ph/dilg-four-new-unified-911-command-centers-now-fully-operational/"
+      }
+    }
+  ]
 }
