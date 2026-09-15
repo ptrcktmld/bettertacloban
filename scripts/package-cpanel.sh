@@ -14,6 +14,12 @@
 
 set -euo pipefail
 
+echo "Legacy BetterBaguio cPanel packaging is disabled for BetterTacloban." >&2
+echo "Use the documented BetterTacloban Cloudflare Pages deployment workflow." >&2
+exit 1
+
+# Historical BetterBaguio packaging implementation retained below for reference only.
+
 DIST="dist"
 OUT_DIR="release"
 RUN_BUILD=false

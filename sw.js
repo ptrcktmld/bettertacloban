@@ -1,4 +1,4 @@
-var CACHE = 'bettertacloban-v0.1.0';
+var CACHE = 'bettertacloban-v0.3.4';
 var CORE = [
   '/', '/services/', '/government/', '/statistics/', '/projects/', '/legislative/', '/budget/', '/contact/',
   '/assets/css/better-baguio.css', '/assets/js/site-shell.js',

@@ -1,3 +1,7 @@
+# LEGACY / DO NOT DEPLOY FOR BETTERTACLOBAN
+
+BetterTacloban uses Cloudflare Pages. Do not deploy, provision, update, or run this inherited BetterBaguio AWS/PRISM infrastructure. It is retained only for historical reference and attribution.
+
 # BetterBaguio PRISM sync on AWS
 
 This stack refreshes Baguio City's public PRISM infrastructure data every Monday at 01:00 Asia/Manila. It is intentionally serverless and has no VPC, NAT gateway, API Gateway, database, WAF, provisioned capacity, custom KMS key, or Secrets Manager charge.

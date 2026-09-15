@@ -1,6 +1,12 @@
 #!/bin/bash
 set -euo pipefail
 
+echo "Legacy BetterBaguio AWS deployment is disabled for BetterTacloban." >&2
+echo "Use the documented BetterTacloban Cloudflare Pages deployment workflow." >&2
+exit 1
+
+# Historical BetterBaguio deployment implementation retained below for reference only.
+
 DEPLOY_PROFILE="${1:-betterbaguio-deployer}"
 DEPLOY_REGION="${2:-ap-southeast-1}"
 ENABLE_WWW_ALIAS="${3:-true}"

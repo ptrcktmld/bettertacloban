@@ -4,6 +4,12 @@ import { mkdir, rename, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
+console.error('Legacy BetterBaguio PRISM synchronization is disabled for BetterTacloban.');
+console.error('Do not use this inherited pipeline for BetterTacloban data.');
+process.exit(1);
+
+// Historical BetterBaguio synchronization implementation retained below for reference only.
+
 const API_BASE = 'https://data.baguio.gov.ph/api/';
 const SOURCE_PAGE = 'https://data.baguio.gov.ph/prism';
 const PAGE_LIMIT = 500;
